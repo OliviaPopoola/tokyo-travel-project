@@ -57,7 +57,6 @@ footer {
     url("../images/tokyo-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 footer h3 {
   font-weight: 700;
@@ -69,7 +68,6 @@ footer p {
   font-size: 16px;
   line-height: 1.2;
   opacity: 0.7;
-  margin-right: 20px;
 }
 footer ul {
   padding: 0;
@@ -86,14 +84,54 @@ footer a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 100px;
+}
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 5px;
+  color: var(--primary-color);
+  opacity: 0.3;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: var(--primary-color);
+  margin: 0;
+}
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-color);
+  opacity: 0.7;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-col {
+  grid-template-columns: 1fr 2fr 2fr;
+}
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
 }
 @media (max-width: 960px) {
   header {
@@ -107,5 +145,12 @@ section {
   }
   header h3 {
     font-size: 12px;
+  }
+  section {
+    padding: 30px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
   }
 }
