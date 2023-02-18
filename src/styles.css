@@ -1,6 +1,10 @@
+:root {
+  --primary-color: rgb(39, 32, 68);
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #272044;
+  /* background-color: var(--primary-color); */
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
@@ -39,17 +43,59 @@ header a {
   text-transform: uppercase;
   background-color: white;
   text-decoration: none;
-  color: #272044;
+  color: var(--primary-color);
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
+}
+footer {
+  color: white;
+  background-image: linear-gradient(
+      var(--primary-color, 0.6),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/tokyo-footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  opacity: 0.7;
+  margin-right: 20px;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
-
-@media (max-width: 900px) {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
