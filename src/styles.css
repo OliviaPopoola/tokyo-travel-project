@@ -163,12 +163,23 @@ h2 .secondary-section {
   background-color: white;
   margin: 30px 0;
 }
+.card-img {
+  height: 100%;
+  width: 100%;
+}
+.grid .card-header {
+  grid-gap: 0;
+}
 .card-body {
   padding: 32px;
 }
 
 .card-footer {
   padding: 0 30px 30px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 .button {
   display: block;
@@ -203,5 +214,11 @@ h2 .secondary-section {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
